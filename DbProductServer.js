@@ -8,7 +8,9 @@ const app = express()
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
-mongoose.connect("mongodb://127.0.0.1:27017/mean").then( () => {
+let dbUrl="mongodb+srv://root:mongoHarsh@cluster0.qberb6z.mongodb.net/?retryWrites=true&w=majority"
+// dbUrl="mongodb://127.0.0.1:27017/mean"
+mongoose.connect(dbUrl).then( () => {
     console.log("Database Connected");
 })
 
