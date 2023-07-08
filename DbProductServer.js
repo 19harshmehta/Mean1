@@ -25,7 +25,6 @@ app.put("/product",ProductController.updateProduct)
 
 
 
-
 //category routes 
 app.post("/category",categoryController.addCategory)
 app.get("/categories",categoryController.getAllCategory) 
